@@ -5,8 +5,6 @@ let previousOperator = null;
 const screen = document.querySelector(".screen");
 
 function buttonClick(value) {
-    //very usefull in debugging " debugger; "
-
     if (isNaN(value)) {
         //this is not a number
         handleSymbol(value);
@@ -18,11 +16,6 @@ function buttonClick(value) {
 }
 
 function handleSymbol(symbol) {
-    // if (symbol === 'C'){
-    //     buffer = '0';
-    //     runningTotal = 0;
-    // }
-
     switch (symbol) {
         case "C":
             buffer = "0";
